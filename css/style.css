@@ -365,13 +365,13 @@ header{
     font-family: var(--ff-primary);
 }
 
-  .service p{
+  .p-services{
     font-size: 1.2rem;
     color: var(--clr-light);
     font-family: var(--ff-secondary), cursive;
   }
 
-  .service p:hover {
+  .p-services:hover {
     animation: glow 1.5s ease-in-out infinite alternate;
   }
 
@@ -405,6 +405,17 @@ header{
 
 .about-me__img {
     box-shadow: var(--bs);
+}
+
+#p-about-me{
+    font-size: 1.2rem;
+    color: var(--clr-dark);
+    font-family: var(--ff-secondary);
+    cursor: pointer;
+}
+
+#p-about-me:hover{
+    animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 @media (min-width: 600px) {
@@ -536,26 +547,26 @@ header{
 
 .card:nth-child(1)::before{
     background: url(../img/PassangerApp.png);
-	background-repeat:no-repeat;
+	background-position: center 0;
+	/*background-repeat: no-repeat;*/
+	/*background-attachment: fixed;*/
 	background-size: contain;
 }
 
 
 .card:nth-child(2)::before{
     background-image: url(../img/MyTunes-landingPage.png);
-    background-repeat:no-repeat;
+    background-position: center 0;
 	background-size: contain;
 }
 
 .card:nth-child(3)::before{
     background-image: url(../img/TributePage-CaroNono.png);
-    background-repeat:no-repeat;
+    background-position: center 0;
     background-size: contain;
 }
 
-.card:nth-child(4)::before{
-    background-image: url(../img/portfolio-04.jpg);
-}
+
 
 
 
@@ -572,14 +583,14 @@ header{
 
 .title-project{
     font-family: var(--ff-primary);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     line-height: 1.2;
 }
 
 .des-project{
     font-family: var(--ff-secondary);
-    font-size: 1.125rem;
+    font-size: 1.rem;
     font-style: italic;
     line-height: 1.35; 
 }
