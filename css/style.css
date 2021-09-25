@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -338,13 +339,50 @@ header{
 }
 
 .services {
+    width: 100%;
     margin-bottom: 4em;
 }
 
-.service {
+/*.service {
+    background-color: var(--clr-accent);
     max-width: 500px;
     margin: 0 auto;
+}*/
+
+.service{
+    display: inline-block;
+    width: 100%;
+    margin: 10px;
+    background: var(--clr-dark);
+    border-radius: 6px;
+    cursor: pointer;
 }
+
+.service h3{
+    margin-top:10px;
+    font-size: 1.5rem;
+    color: var(--clr-accent);
+    font-family: var(--ff-primary);
+}
+
+  .service p{
+    font-size: 1.2rem;
+    color: var(--clr-light);
+    font-family: var(--ff-secondary), cursive;
+  }
+
+  .service p:hover {
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0px 0px 5px #fff, 0px 0px 5px #614ad3;
+    }
+    to {
+      text-shadow: 0px 0px 20px #fff, 0px 0px 20px #614ad3;
+    }
+  }
 
 @media (min-width: 800px) {
     .services {
@@ -497,15 +535,22 @@ header{
 }
 
 .card:nth-child(1)::before{
-    background-image: url(../img/PassangerApp.png);
+    background: url(../img/PassangerApp.png);
+	background-repeat:no-repeat;
+	background-size: contain;
 }
+
 
 .card:nth-child(2)::before{
     background-image: url(../img/MyTunes-landingPage.png);
+    background-repeat:no-repeat;
+	background-size: contain;
 }
 
 .card:nth-child(3)::before{
     background-image: url(../img/TributePage-CaroNono.png);
+    background-repeat:no-repeat;
+    background-size: contain;
 }
 
 .card:nth-child(4)::before{
@@ -636,13 +681,6 @@ header{
 }
 
 */
-
-
-
-
-
-
-
 
 /*  Footer*/
 
