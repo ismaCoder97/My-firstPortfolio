@@ -497,15 +497,15 @@ header{
 }
 
 .card:nth-child(1)::before{
-    background-image: url(../img/PreviewProjectPassangerApp.png);
+    background-image: url(../img/PassangerApp.png);
 }
 
 .card:nth-child(2)::before{
-    background-image: url(../img/myTunes-LandingPage.png);
+    background-image: url(../img/MyTunes-landingPage.png);
 }
 
 .card:nth-child(3)::before{
-    background-image: url(../img/portfolio-03.jpg);
+    background-image: url(../img/TributePage-CaroNono.png);
 }
 
 .card:nth-child(4)::before{
